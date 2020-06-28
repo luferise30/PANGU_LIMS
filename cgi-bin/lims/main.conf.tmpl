@@ -1,0 +1,29 @@
+##
+## Template for System Settings
+## Please remember to rename this file as "main.conf"
+## for your local deployment.
+##
+
+## MySQL database params
+USERNAME = YOUR-DB-USERNAME
+PASSWORD = YOUR-DB-PASSWORD
+DATABASE = YOUR-DB-NAME
+DBHOST = localhost #YOUR DB HOST NAME
+
+## Directories & URLs
+HOSTURL = http://your.host.url
+CGIBINDIR = /var/www/cgi-bin   #if you put LIMS in a subdirectory (e.g. lims), you may set a value like  /var/www/cgi-bin/lims
+CGIBIN = /cgi-bin  #if you put LIMS in a subdirectory (e.g. lims), you may set a value like  /cgi-bin/lims
+HTMLDIR = /var/www/html #if you put LIMS in a subdirectory (e.g. lims), you may set a value like  /var/www/html/lims
+HTDOCS =  # leave blank for root directory, if you put LIMS in a subdirectory (e.g. lims), you may set a value like  /lims
+
+DATADIR = /var/www/html/data #create a directory for saving data. if you put LIMS in a subdirectory (e.g. lims), you should set a value like  /var/www/html/lims/data
+TMPDIR = /var/www/html/data/tmp # a tmp directory, make sure it's writable, if you put LIMS in a subdirectory (e.g. lims), you should set a value like  /var/www/html/lims/data/tmp
+TMPURL = /data/tmp # the url value for temp dir, if you put LIMS in a subdirectory (e.g. lims), you should set a value like  /lims/data/tmp
+JOBDIR = /var/www/html/data/jobs #for saving smrtanalysis jobs, if you put LIMS in a subdirectory (e.g. lims), you should set a value like  /lims/data/jobs
+
+VECTOR = /var/www/html/data/pAGIBAC1_HindIII.txt
+VECTORLENGTH = 7522
+
+POLISHED =  #leave blank to use getstore instead of saved file
+POLISHEDURL = #give a relative path value if POLISHED is not 0
